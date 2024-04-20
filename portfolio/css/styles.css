@@ -1,0 +1,481 @@
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 1500px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 1200px;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/graygrunge.jpg");
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: slidein 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.alignBox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  border-radius: 40px;
+  text-align: auto;
+  background-color: #000000;
+  color: rgb(255, 94, 0);
+  opacity: 0.8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.meImage {
+  padding: 30px;
+  padding-top: 40px;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+.alignSmallBox {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #000000;
+  color: rgb(5, 242, 242);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+  font-size: large;
+  box-shadow: 5px 5px 5px #000000;
+  opacity: 0.8;
+}
+
+body {
+  font-family: Comic Sans MS, cursive, sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: left;
+  font-size: larger;
+  color: rgb(255, 94, 0);
+  opacity: 0.9;
+}
+
+.alignHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: rgb(5, 242, 242);
+  font-size: 25px;
+}
+
+.alignHeader2 {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 94, 0);
+  font-size: 25px;
+  text-shadow: 1px 1px 2px white;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+main div h1 {
+  text-align: center;
+}
+
+.topHeader ul {
+  background-color: rgb(0, 0, 0);
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+}
+.topHeader li {
+  display: inline;
+}
+.topHeader li a {
+  display: inline-block;
+  color: rgb(255, 94, 0);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+.topHeader li a:hover {
+  background-color: rgb(255, 94, 0);
+  color: rgb(5, 242, 242);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  color: rgb(255, 94, 0);
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  opacity: 0.8;
+}
+
+.alignHeaderText {
+  text-align: left;
+  font-size: 30px;
+  padding-left: 20px;
+  color: rgb(255, 94, 0);
+}
+
+.alignName {
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 20px;
+}
+
+.topnav {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+#myLinks {
+  display: none;
+}
+
+.image {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 10px;
+  height: 250px;
+  width: 250px;
+  border-radius: 40px;
+}
+
+.qrcode {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #c0c0c0;
+}
+
+.alignQR {
+  align-items: center;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.alignResponse {
+  margin-left: 65px;
+}
+
+#name_test {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: large;
+  font-weight: bold;
+  padding: 15px;
+  margin-top: 55px;
+  text-align: left;
+  color: rgb(5, 242, 242);
+  background-color: #000000;
+  width: 75%;
+  margin: auto;
+  align-self: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px #000000;
+}
+
+.formPadding {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+form h1 {
+  padding: 5px;
+  text-align: center;
+  color: rgb(5, 242, 242);
+}
+
+.formatLabelComments {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  text-align: right;
+  margin: 10px;
+  margin-top: 45px;
+}
+
+@media (max-width: 600px) {
+  .formatLabelComments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    align-items: left;
+    text-align: left;
+  }
+}
+.formatLabel {
+  display: inline-block;
+  vertical-align: center;
+  width: 150px;
+  text-align: right;
+  margin: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .formatLabel {
+    text-align: left;
+  }
+}
+input[type=text] {
+  width: 70%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  input[type=text] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+textarea[id=comments] {
+  width: 70%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  textarea[id=comments] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+select[id=reason] {
+  width: 70%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  select[id=reason] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+.button {
+  font-size: 20px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-content: center;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+#button a,
+#button2 a {
+  text-decoration: none;
+  color: rgb(255, 94, 0);
+  background-color: #000000;
+  border: 1px solid gray;
+  border-radius: 40px;
+}
+
+#button:hover,
+#button2:hover {
+  background-color: rgb(5, 242, 242);
+  color: rgb(38, 13, 11);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: rgb(255, 94, 0);
+  padding: 10px;
+  opacity: 0.8;
+  font-size: large;
+}
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.alignLogo {
+  padding: 15px;
+}
+
+.clearFix {
+  overflow: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  align-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  .flip-card {
+    margin: auto;
+  }
+}
+.flip-card {
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: rgb(255, 94, 0);
+  margin: auto;
+}
+
+.alignBoxBack {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  border-radius: 40px;
+  text-align: auto;
+  background-color: #000000;
+  color: rgb(255, 94, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.centered {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 94, 0);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-shadow: 0 0 rgb(255, 94, 0), 0 1.2em #000000;
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.centered:hover {
+  text-shadow: 0 -1.2em rgb(255, 94, 0), 0 0 black;
+}
+
+.centered a {
+  color: rgb(5, 242, 242);
+  text-decoration: none;
+}
+
+.centered:hover a {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
