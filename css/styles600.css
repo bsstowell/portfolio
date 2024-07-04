@@ -1,0 +1,125 @@
+@media (max-width: 600px) {
+  .topHeader ul {
+    display: none;
+  }
+  .alignHeaderText {
+    text-align: center;
+    padding-left: none;
+    margin: auto;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .topnav {
+    display: inline-block;
+    background-color: black;
+    text-align: center;
+    padding-top: 40px;
+    text-decoration: none;
+    font-size: 2px;
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.8;
+    height: auto;
+    line-height: 1.3;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    background: none;
+    text-align: center;
+    font-size: 35px;
+    position: absolute;
+    right: 47%;
+    top: -5%;
+  }
+  .topnav a:hover {
+    color: rgb(255, 94, 0);
+  }
+  .alignHeaderText {
+    font-size: 20px;
+  }
+  .qrcode {
+    display: none;
+  }
+  figcaption {
+    display: none;
+  }
+  .alignHeader2 {
+    display: none;
+  }
+  .alignHeaderMobile {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 94, 0);
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgb(59, 59, 59);
+    height: auto;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  form {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .formatLabelComments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    align-items: left;
+    text-align: left;
+  }
+  textarea[id=comments] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .formatLabel {
+    text-align: left;
+  }
+  input[type=text] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  select[id=reason] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  .flip-card {
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}/*# sourceMappingURL=styles600.css.map */
